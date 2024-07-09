@@ -31,8 +31,4 @@ src/WeatherService.js > Replace with your api key
 npm install or npm i
 
 npm start
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> 570380e8c04c89cd2d695f9492fcfdf91e0bc07a
