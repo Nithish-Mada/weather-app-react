@@ -15,18 +15,11 @@ Locate  API key![alt text](weatherapp.png)
 ```shell
 cd weather-app-react
 ```
+> Step 3:
 
->Step 3:
-
-```shell
-npm install axios chart.js
-```
+src/WeatherService.js > Replace with your api key > at line number 4.
 
 > Step 4:
-
-src/WeatherService.js > Replace with your api key
-
-> Step 5:
 ```shell
 npm install or npm i
 
