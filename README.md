@@ -15,8 +15,6 @@ Locate  API key![alt text](weatherapp.png)
 ```shell
 cd weather-app-react
 ```
-> Step 3:
-
 >Step 3:<br>
 __Replace sample.env with .env and add city name,API_KEY__
 
