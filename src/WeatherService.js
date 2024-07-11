@@ -1,7 +1,6 @@
-// WeatherService.js
 import axios from 'axios';
 
-const API_KEY = 'Your_api_key'; // Replace with your API key
+const API_KEY = process.env.REACT_APP_API_KEY; // Ensure your API key is correctly set in your environment variables
 
 const WeatherService = {
   getCurrentWeather: async (city) => {
@@ -16,10 +15,11 @@ const WeatherService = {
     }
   },
 
-  getHistoricalWeather: async (city, startDate, endDate) => {
+  getHistoricalWeather: async (lat, lon, timestamp) => {
     try {
+      // The timestamp should be in UNIX format
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${city.lat}&lon=${city.lon}&dt=${endDate}&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/onecall/timemachine?lat=${lat}&lon=${lon}&dt=${timestamp}&appid=${API_KEY}&units=metric`
       );
       return response.data;
     } catch (error) {
